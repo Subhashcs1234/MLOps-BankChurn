@@ -1,11 +1,11 @@
 import pandas as pd
 import sklearn
 import os
-from skelarn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split
 from huggingface_hub import HfApi, login
 
 api = HfApi(token=os.getenv("HF_TOKEN"))
-DATASET_PATH = "hf://datasets/subhash33/Bank-Customer-Churn/bank_customer_churn.csv"
+DATASET_PATH = "hf://datasets/subhash33/bank-customer-churn/bank_customer_churn.csv"
 bank_dataset = pd.read_csv(DATASET_PATH)
 print("Dataset loaded successfully.")
 
@@ -53,6 +53,6 @@ for file_path in files:
     api.upload(
         path_or_fileobj=file_path,
         path_in_repo=file_path.split('/')[-1],
-        repo_id="Subhash33/Bank-Customer-Churn",
+        repo_id="Subhash33/bank-customer-churn",
         repo_type="dataset",
     )

@@ -13,10 +13,10 @@ from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
 
 api = HfApi()
 
-Xtrain_path = "hf://datasets/subhash33/Bank-Customer-Churn/Xtrain.csv"
-Xtest_path = "hf://datasets/subhash33/Bank-Customer-Churn/Xtest.csv"
-ytrain_path = "hf://datasets/subhash33/Bank-Customer-Churn/ytrain.csv"
-ytest_path = "hf://datasets/subhash33/Bank-Customer-Churn/ytest.csv"
+Xtrain_path = "hf://datasets/subhash33/bank-customer-churn/Xtrain.csv"
+Xtest_path = "hf://datasets/subhash33/bank-customer-churn/Xtest.csv"
+ytrain_path = "hf://datasets/subhash33/bank-customer-churn/ytrain.csv"
+ytest_path = "hf://datasets/subhash33/bank-customer-churn/ytest.csv"
 
 # List of numerical features in the dataset
 numeric_features = [
