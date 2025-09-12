@@ -50,7 +50,7 @@ preprocessor = make_column_transformer(
     (OneHotEncoder(handle_unknown='ignore'), categorical_features),
 )
 
-xgb_model = xgb.XBGClassifier(scale_pos_weight=class_wight, random_state=42)
+xgb_model = xgb.XGBClassifier(scale_pos_weight=class_wight, random_state=42)
 
 param_grid = {
     'xgbclassifier__n_estimators': [50, 75, 100, 125, 150],    # number of tree to build
