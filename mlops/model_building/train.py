@@ -75,7 +75,7 @@ classification_threshold = 0.45
 y_pred_train_proba = best_model.predict_proba(Xtrain)[:, 1]
 y_pred_train = (y_pred_train_proba >= classification_threshold).astype(int)
 
-y_pred_test_proba = best_model.predict_proba(ytrain)[:, 1]
+y_pred_test_proba = best_model.predict_proba(Xtest)[:, 1]
 y_pred_test = (y_pred_test_proba >= classification_threshold).astype(int)
 
 # Generate a classification report to evaluate model performance on training set
