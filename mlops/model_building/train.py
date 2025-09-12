@@ -17,6 +17,12 @@ Xtest_path = "hf://datasets/subhash33/bank-customer-churn/Xtest.csv"
 ytrain_path = "hf://datasets/subhash33/bank-customer-churn/ytrain.csv"
 ytest_path = "hf://datasets/subhash33/bank-customer-churn/ytest.csv"
 
+
+Xtrain = pd.read_csv(Xtrain_path)
+Xtest = pd.read_csv(Xtest_path)
+ytrain = pd.read_csv(ytrain_path)
+ytest = pd.read_csv(ytest_path)
+
 # List of numerical features in the dataset
 numeric_features = [
     'CreditScore',       # Customer's credit score
