@@ -62,7 +62,7 @@ param_grid = {
 }
 
 model_pipeline = make_pipeline(preprocessor, xgb_model)
-grid_search = GridSearchCV(model_pipeline, param_grid, cv=5, njobs=-1)
+grid_search = GridSearchCV(model_pipeline, param_grid, cv=5, n_jobs=-1)
 grid_search.fit(Xtrain, ytrain)
 
 grid_search.best_params_
