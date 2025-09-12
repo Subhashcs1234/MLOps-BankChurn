@@ -1,0 +1,1 @@
+from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
