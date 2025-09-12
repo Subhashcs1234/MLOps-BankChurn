@@ -11,7 +11,6 @@ import os
 from huggingface_hub import login, HfApi, create_repo
 from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
 
-api = HfApi()
 
 Xtrain_path = "hf://datasets/subhash33/bank-customer-churn/Xtrain.csv"
 Xtest_path = "hf://datasets/subhash33/bank-customer-churn/Xtest.csv"
