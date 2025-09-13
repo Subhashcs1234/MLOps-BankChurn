@@ -101,8 +101,9 @@ except RepositoryNotFoundError:
     create_repo(repo_id=repo_id, repo_type=repo_type, private=False)
     print(f"Model Space '{repo_id}' created.")
 
-api.upload_folder(
-    folder_path="mlops/data",
+api.upload_file(
+    folder_path="best_churn_model.joblib",
+    path_in_repo="best_churn_model.joblib",
     repo_id=repo_id,
     repo_type=repo_type,
 )
