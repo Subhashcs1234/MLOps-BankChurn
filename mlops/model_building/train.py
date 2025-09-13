@@ -102,7 +102,7 @@ except RepositoryNotFoundError:
     print(f"Model Space '{repo_id}' created.")
 
 api.upload_file(
-    folder_path="best_churn_model.joblib",
+    path_or_fileobj="best_churn_model.joblib",
     path_in_repo="best_churn_model.joblib",
     repo_id=repo_id,
     repo_type=repo_type,
