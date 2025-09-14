@@ -50,7 +50,7 @@ ytest.to_csv("ytest.csv",index=False)
 files = ["Xtrain.csv","Xtest.csv","ytrain.csv","ytest.csv"]
 
 for file_path in files:
-    api.upload_file(
+    api.upload(
         path_or_fileobj=file_path,
         path_in_repo=file_path.split('/')[-1],
         repo_id="Subhash33/bank-customer-churn",
